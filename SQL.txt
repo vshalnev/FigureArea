@@ -1,0 +1,6 @@
+Две таблицы не могут быть связаны как "многие ко многим", необходима третья таблица.
+
+SELECT Product.Name , Category.Name
+FROM 
+Product LEFT JOIN ProductCategory
+ON Product.Name == ProductCategory.ProductName
